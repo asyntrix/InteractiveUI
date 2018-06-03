@@ -7,11 +7,18 @@
     "test": "jest",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android"
   },
   "dependencies": {
+    "mobx": "^4.3.0",
+    "mobx-react": "^5.1.2",
     "react": "16.3.1",
-    "react-native": "0.55.4"
+    "react-native": "0.55.4",
+    "react-native-svg": "^6.3.1",
+    "react-navigation": "^2.0.4",
+    "react-navigation-fluid-transitions": "^0.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
@@ -33,6 +40,9 @@
     "preset": "react-native"
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"]
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
