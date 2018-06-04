@@ -9,7 +9,7 @@ export default class Screen2 extends React.Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <Transition appear="top" disappear>
+        <Transition appear="top" disappear="vertical">
           <Svg
             width={window.width}
             height="200"
